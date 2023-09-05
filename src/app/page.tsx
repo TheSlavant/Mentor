@@ -2,7 +2,7 @@
 
 import Image from 'next/image'
 import { useState, useEffect } from 'react';
-import { Configuration, OpenAIApi } from "openai";
+import OpenAI from "openai";
 
 type Message = {
   text: string;
@@ -55,7 +55,8 @@ export default function Home() {
 
     try {
         const apiResponse = await makeAPICall('Personality: Paul.', inputValue);
-        const newMessages: Message[] = [...updatedMessages, { text: apiResponse, sender: 'AI' }];
+        console.log("API Response:", apiResponse);
+        const newMessages: Message[] = [...updatedMessages, { text: apiResponse.content, sender: 'AI' }];
         setMessages(newMessages);
     } catch (error) {
         const newMessages: Message[] = [...updatedMessages, { text: 'Error: Unable to fetch response.', sender: 'AI' }];
@@ -66,23 +67,31 @@ export default function Home() {
 };
 
   return (
-    <div className="font-sans bg-white p-8">
-      <header className="text-center text-2xl mb-6">Minimalist Chat</header>
-      <div className="border p-4 h-96 overflow-y-scroll mb-6">
+    <div className="font-sans bg-white p-8 h-screen flex flex-col justify-between">
+      <div className="mb-6">
+        <header className="text-center text-3xl mb-2">Personality: Paul</header>
+        <p className="text-center text-gray-600">
+          This model is fine-tuned to be thoughtful, concise, and kind. 
+          It offers good insights and selectively uses sense of humor.
+        </p>
+      </div>
+      
+      <div className="shadow-lg bg-gray-100 rounded-lg p-4 flex-grow overflow-y-scroll mb-6 mx-auto w-2/3">
         {messages.map((message, index) => (
-          <div key={index} className={`p-4 rounded-lg mb-4 ${message.sender === 'user' ? 'bg-gray-300' : 'bg-gray-200'}`}>
+          <div key={index} className={`p-3 mb-3 ${message.sender === 'user' ? 'bg-white rounded-tl-lg rounded-br-lg' : 'bg-gray-300 rounded-tr-lg rounded-bl-lg'}`}>
             {message.text}
           </div>
         ))}
       </div>
-      <div className="flex">
+      
+      <div className="flex mx-auto w-2/3 mb-4">
         <input
           value={inputValue}
           onChange={e => setInputValue(e.target.value)}
           placeholder="Type a message..."
           className="flex-1 p-4 border rounded-l-lg mr-1"
         />
-        <button onClick={handleSendMessage} className="bg-blue-500 text-white p-4 rounded-r-lg hover:bg-blue-700">
+        <button onClick={handleSendMessage} className="bg-gray-950 text-white p-4 rounded-r-lg hover:bg-gray-950">
           Send
         </button>
       </div>
