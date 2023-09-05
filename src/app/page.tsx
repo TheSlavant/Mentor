@@ -71,8 +71,11 @@ export default function Home() {
       <div className="mb-6">
         <header className="text-center text-3xl mb-2">Personality: Paul</header>
         <p className="text-center text-gray-600">
-          This model is fine-tuned to be thoughtful, concise, and kind. 
-          It offers good insights and selectively uses sense of humor.
+          This model is being fine-tuned to be thoughtful, concise, and kind. 
+          It (sometimes) offers good insights and selectively uses sense of humor.
+        </p>
+        <p className="text-center text-gray-600">
+          DM your chat to @<a href="https://twitter.com/TheSlavant" className="font-semibold text-black underline">TheSlavant</a> so we can keep training.
         </p>
       </div>
       
