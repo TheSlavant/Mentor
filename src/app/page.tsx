@@ -70,9 +70,9 @@ export default function Home() {
     <div style={{ fontFamily: 'Menlo, monospace' }} className="bg-pink-500 p-8 h-screen flex flex-col justify-between text-sm text-justify">
       <div className="mb-6">
         <header className="text-center text-white text-3xl mb-2">SoulweightGPT</header>
-        <div className="mx-auto w-3/5 my-8">
+        <div className="font-bold mx-auto w-3/5 my-8">
             <p className="text-right text-white mb-1">
-                “To be honest, we didn't know what it meant for a computer to be 'friendly' until Steve told us."
+              &quot;To be honest, we didn&apos;t know what it meant for a computer to be &apos;friendly&apos; until Steve told us.&quot;
             </p>
             <p className="text-right text-white mt-1">
                 — Terry Oyama on building Macintosh, 1984
@@ -82,19 +82,19 @@ export default function Home() {
           <p className="text-white mr-4">
             Help us turn LLMs from THIS
           </p>
-          <img src="/impesonal_computer.jpg" alt="Impersonal Computer" width={180} height={180}/>
+          <Image src="/impesonal_computer.jpg" alt="Impersonal Computer" width={180} height={180}/>
           <p className="text-white ml-4 mr-4">
             into THIS
           </p>
-          <img src="/friendly_macintosh.jpg" alt="Friendly Macintosh" width={180} height={180}/>
+          <Image src="/friendly_macintosh.jpg" alt="Friendly Macintosh" width={180} height={180}/>
         </div>
         <p className="text-white mt-4 mx-auto w-3/5">
-          Let's fine-tune this GPT to be thoughtful, curious, kind, and direct like a human. <br />
+          Let&apos;s fine-tune this GPT to be thoughtful, curious, kind, and direct like a human. <br />
           Friendly Macintosh, not Impersonal PC. Friend, not friendly stranger.
         </p>
         <p className="text-white mt-4 mx-auto w-3/5">
-          This v0.1 is trained a tiny handmade dataset. Let's see just how good we can make it. <br />
-          We're building a better way to eval. For now, just DM your chat @<a href="https://twitter.com/TheSlavant" className="font-semibold underline">TheSlavant</a> and we'll keep fine-tuning.
+          This v0.1 is trained a tiny handmade dataset. Let&apos;s see just how good we can make it. <br />
+          We&apos;re building a better way to eval. For now, just DM your chat @<a href="https://twitter.com/TheSlavant" className="font-semibold underline">TheSlavant</a> and we&apos;ll keep fine-tuning.
         </p>
       </div>
             
