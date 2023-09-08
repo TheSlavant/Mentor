@@ -16,7 +16,7 @@ export async function POST(request: Request) {
   });
 
   try {
-      const formattedMessages = messageHistory.map(msg => ({
+      const formattedMessages = messageHistory.map((msg: { sender: string; text: any; }) => ({
           role: msg.sender.toLowerCase(),
           content: msg.text
       }));
