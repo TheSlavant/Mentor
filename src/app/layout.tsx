@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     creator: "@TheSlavant",
     images: [
       {
-        url: "src/app/twitter-image.jpg",
+        url: "/twitter-image.jpg",
         alt: "The Macintosh Fine-Tune UI",
       },
     ],
