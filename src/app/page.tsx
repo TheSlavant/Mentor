@@ -14,7 +14,7 @@ export default function Home() {
   const [inputValue, setInputValue] = useState('');
   const [apiKey, setApiKey] = useState('');
   const [viewMode, setViewMode] = useState('intro');
-  const chatRef = useRef(null);
+  const chatRef = useRef<HTMLDivElement | null>(null);
 
   const startChat = () => {
     setViewMode('chat');
