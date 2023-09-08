@@ -8,6 +8,18 @@ const inter = Inter({ subsets: ['latin'] })
 export const metadata: Metadata = {
   title: 'The Macintosh Fine-Tune',
   description: 'SOTA LLMs, but better.',
+  twitter: {
+    card: "summary_large_image",
+    title: "The Macintosh Fine-Tune",
+    description: "SOTA LLMs, but better.",
+    creator: "@TheSlavant",
+    images: [
+      {
+        url: "src/app/twitter-image.jpg",
+        alt: "The Macintosh Fine-Tune UI",
+      },
+    ],
+  },
 }
 
 export default function RootLayout({ children, }: { children: React.ReactNode }) {
