@@ -7,19 +7,19 @@ const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
   title: 'The Macintosh Fine-Tune',
-  description: 'Chat and feel the difference.',
-  twitter: {
-    card: "summary_large_image",
-    title: "The Macintosh Fine-Tune",
-    description: "Chat and feel the difference.",
-    creator: "@TheSlavant",
-    images: [
-      {
-        url: "/twitter-image.jpg",
-        alt: "The Macintosh Fine-Tune UI",
-      },
-    ],
-  },
+  description: 'Building AI assistants that spark joy.',
+  // twitter: {
+  //   card: "summary_large_image",
+  //   title: "The Macintosh Fine-Tune",
+  //   description: "Building AI assistants that spark joy.",
+  //   creator: "@TheSlavant",
+  //   images: [
+  //     {
+  //       url: "/twitter-image.jpg",
+  //       alt: "The Macintosh Fine-Tune UI",
+  //     },
+  //   ],
+  // },
 }
 
 export default function RootLayout({ children, }: { children: React.ReactNode }) {
