@@ -1,8 +1,15 @@
 import { NextResponse } from 'next/server';
 import OpenAI from "openai";
 
+import { Message } from '../../types.jsx';
+
+interface RequestBody {
+  prompt: string;
+  messageHistory: Message[];
+}
+
 export async function POST(request: Request) {
-  const { prompt, messageHistory } = await request.json();
+  const { prompt, messageHistory }: RequestBody = await request.json();
 
   const openai = new OpenAI({
       apiKey: process.env.OPENAI_API_KEY

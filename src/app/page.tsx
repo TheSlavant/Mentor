@@ -3,10 +3,7 @@
 import Image from 'next/image'
 import { useState, useEffect, useRef } from 'react';
 
-type Message = {
-  text: string;
-  sender: 'user' | 'assistant';
-};
+import { Message } from './types.jsx';
 
 export default function Home() {
 
