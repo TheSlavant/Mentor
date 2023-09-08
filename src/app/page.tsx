@@ -129,7 +129,7 @@ const handleSendMessage = async () => {
             </div>
             <div className="mt-8 md:mt-0 text-white mx-auto w-full lg:w-1/2">
               <p className="mt-8">
-                <a href="#" onClick={startChat} className="underline text-white">Imagine just having some fun. —&gt;</a>
+                <a href="#" onClick={startChat} className="underline text-white">Imagine just having a bit of fun. —&gt;</a>
               </p>
             </div>
           </>
