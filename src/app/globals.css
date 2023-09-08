@@ -16,3 +16,15 @@
   }
 }
 
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.fadeIn-animation {
+  animation: 0.9s fadeIn ease-out;
+}

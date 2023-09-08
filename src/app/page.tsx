@@ -75,7 +75,7 @@ const handleSendMessage = async () => {
 
   return (
     <div style={{ fontFamily: 'Menlo, monospace' }} className="bg-pink-500 p-8 min-h-screen md:h-screen flex flex-col justify-between text-sm text-justify">
-      <div className="mb-6">
+      <div className="fadeIn-animation mb-6">
         <header className="text-center text-white text-3xl mb-2">
           <div className="flex items-center justify-center">
               The Macintosh Fine-Tune
@@ -83,7 +83,7 @@ const handleSendMessage = async () => {
                 src="/macintosh-icon.svg" 
                 alt="Macintosh Icon" 
                 width={30}  // Approximate size for 3xl text. Adjust as needed.
-                height={30} 
+                height={38.46} 
                 className="ml-4" // Adds a small margin to the right
               />
           </div>
@@ -104,11 +104,11 @@ const handleSendMessage = async () => {
               <p className="text-white mb-4 md:mb-0 md:mr-4">
                 LLMs today:
               </p>
-              <Image src="/thinkpad.jpg" alt="Impersonal Computer" width={150} height={150} className="max-w-full"/>
+              <Image src="/thinkpad.jpg" alt="Impersonal Computer" width={150} height={104} className="max-w-full"/>
               <p className="text-white mt-4 mb-4 md:mt-0 md:mb-0 md:ml-12 md:mr-4">
                 The Macintosh Fine-Tune:
               </p>
-              <Image src="/macintosh.jpg" alt="Friendly Macintosh" width={150} height={150} className="max-w-full" />
+              <Image src="/macintosh.jpg" alt="Friendly Macintosh" width={150} height={104} className="max-w-full" />
             </div>
             <div className="mt-8 md:mt-0 text-white mx-auto w-full lg:w-1/2">
               <p className="mt-8">
@@ -126,32 +126,29 @@ const handleSendMessage = async () => {
               <p className="mt-8">
                 Imagine the <b>research</b> we can do. How does training data affect personality? Are some LLM personalities safer than others?
               </p>
-              <p className="mt-8">
-                Imagine just having a little bit of fun.
-              </p>
             </div>
             <div className="mt-8 md:mt-0 text-white mx-auto w-full lg:w-1/2">
               <p className="mt-8">
-                <a href="#" onClick={startChat} className="underline text-white">Talk to the model —&gt;</a>
+                <a href="#" onClick={startChat} className="underline text-white">Imagine just having some fun. —&gt;</a>
               </p>
             </div>
           </>
         ) : (
           <>
-            <p className="text-white mt-4 mx-auto w-full lg:w-1/2">
+            <p className="fadeIn-animation text-white mt-4 mx-auto w-full lg:w-1/2">
                 <b>How to use:</b> For the best results, try asking for advice. For example: &quot;I&apos;m a startup founder. What can I do to keep my team motivated?&quot;
             </p>
-            <p className="text-white mt-4 mx-auto w-full lg:w-1/2">
+            <p className="fadeIn-animation text-white mt-4 mx-auto w-full lg:w-1/2">
                 <b>Can we get a deep personality via fine-tuning?</b> We think yes. We built this v0.1 with a tiny handcrafted dataset. With more data, we believe we can make it much better.
             </p>
-            <p className="text-white mt-4 mx-auto w-full lg:w-1/2">
+            <p className="fadeIn-animation text-white mt-4 mx-auto w-full lg:w-1/2">
                 <b>This looks cool. Can I contribute?</b> Yes!
             </p>
-            <p className="text-white pl-4 mt-0 mx-auto w-full lg:w-1/2">
+            <p className="fadeIn-animation text-white pl-4 mt-0 mx-auto w-full lg:w-1/2">
                 1. Screenshot &amp; DM your chat @<a href="https://twitter.com/TheSlavant" className="font-semibold underline">TheSlavant</a>. Tell us how you like the personality.
             </p>
-            <p className="text-white pl-4 mt-0 mx-auto w-full lg:w-1/2">
-                2. Join us to help build a larger dataset and keep fine-tuning.
+            <p className="fadeIn-animation text-white pl-4 mt-0 mx-auto w-full lg:w-1/2">
+                2. Join us to help build a larger dataset, automate evals, and keep fine-tuning.
             </p>
           </>
         )}
@@ -161,7 +158,7 @@ const handleSendMessage = async () => {
         <>
           <div 
             ref={chatRef}
-            className="shadow-lg bg-gray-100 rounded-sm p-4 flex-grow overflow-y-auto mb-6 mx-auto w-full lg:w-1/2">
+            className="fadeIn-animation shadow-lg bg-gray-100 rounded-sm p-4 flex-grow overflow-y-auto mb-6 mx-auto w-full lg:w-1/2">
             {messages.map((message, index) => (
               <div key={index} className={`p-3 mb-3 ${message.sender === 'user' ? 'bg-white rounded-tl-sm rounded-br-sm' : 'bg-gray-300 rounded-tr-sm rounded-bl-sm'}`}>
                 {message.text}
@@ -169,7 +166,7 @@ const handleSendMessage = async () => {
             ))}
           </div>
           
-          <div className="flex mx-auto mb-4 w-full lg:w-1/2">
+          <div className="fadeIn-animation flex mx-auto mb-4 w-full lg:w-1/2">
             <input
               value={inputValue}
               onChange={e => setInputValue(e.target.value)}
@@ -177,7 +174,7 @@ const handleSendMessage = async () => {
               placeholder="Type a message..."
               className="flex-1 p-4 border rounded-sm mr-1"
             />
-            <button onClick={handleSendMessage} className="bg-gray-950 text-white p-4 rounded-r-sm hover:bg-gray-950">
+            <button onClick={handleSendMessage} className="fadeIn-animation bg-gray-950 text-white p-4 rounded-r-sm hover:bg-gray-950">
               Send
             </button>
           </div>
