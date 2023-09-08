@@ -7,11 +7,11 @@ const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
   title: 'The Macintosh Fine-Tune',
-  description: 'SOTA LLMs, but better.',
+  description: 'Chat and feel the difference.',
   twitter: {
     card: "summary_large_image",
     title: "The Macintosh Fine-Tune",
-    description: "SOTA LLMs, but better.",
+    description: "Chat and feel the difference.",
     creator: "@TheSlavant",
     images: [
       {
