@@ -136,7 +136,7 @@ const handleSendMessage = async () => {
         ) : (
           <>
             <p className="fadeIn-animation text-white mt-4 mx-auto w-full lg:w-1/2">
-                <b>How to use:</b> For the best results, try asking for advice. For example: &quot;I&apos;m a startup founder. What can I do to keep my team motivated?&quot;
+                <b>How to use:</b> For the best results, try asking for advice. For example: &quot;I&apos;m a startup founder. How can I keep my team motivated?&quot; You may have to try 2-3 times for a gem. 
             </p>
             <p className="fadeIn-animation text-white mt-4 mx-auto w-full lg:w-1/2">
                 <b>Can we get a deep personality via fine-tuning?</b> We think yes. We built this v0.1 with a tiny handcrafted dataset. With more data, we believe we can make it much better.
