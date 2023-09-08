@@ -1,4 +1,5 @@
 import { ImageResponse } from 'next/server';
+import Image from 'next/image'
  
 export const runtime = 'edge';
  
@@ -23,7 +24,7 @@ export async function GET() {
           alignItems: 'center',
         }}
       >
-        <img width="256" height="256" src={imageUrl} />
+        <Image width="256" height="256" src={imageUrl} alt={'The Macintosh Fine-Tune UI'} />
       </div>
     ),
     {
