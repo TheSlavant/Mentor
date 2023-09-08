@@ -3,7 +3,7 @@ import { ImageResponse } from 'next/server';
 export const runtime = 'edge';
  
 export async function GET() {
-  const imageData = await fetch(new URL('./twitter-image.jpg', import.meta.url)).then(
+  const imageData = await fetch(new URL('../twitter-image.jpg', import.meta.url)).then(
     (res) => res.arrayBuffer(),
   );
 
