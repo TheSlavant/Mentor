@@ -62,7 +62,7 @@ const handleSendMessage = async () => {
     setInputValue('');
 
     try {
-      const apiResponse = await makeAPICall('Personality: Paul.', updatedMessages);
+      const apiResponse = await makeAPICall('Personality: insigthful, witty, direct.', updatedMessages);
       console.log("API Response:", apiResponse);
       const newMessages: Message[] = [...updatedMessages, { text: apiResponse.content, sender: 'assistant' }];
       setMessages(newMessages);

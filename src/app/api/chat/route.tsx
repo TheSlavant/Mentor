@@ -17,7 +17,7 @@ export async function POST(request: Request) {
     formattedMessages.unshift({ role: 'system', content: prompt });
 
     const chatCompletion = await openai.chat.completions.create({
-      model: "ft:gpt-3.5-turbo-0613:personal:paul:7vG72ZUh",
+      model: "ft:gpt-3.5-turbo-0613:personal:paul:7yYLNQ3L",
       messages: formattedMessages
     });
 
