@@ -20,7 +20,7 @@ export default function Home() {
   const startChat = () => {
     setViewMode('chat');
   };
-
+ 
   const scrollToBottom = () => {
     if (chatRef.current) {
       chatRef.current.scrollTop = chatRef.current.scrollHeight;
