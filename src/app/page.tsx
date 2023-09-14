@@ -147,7 +147,7 @@ const handleToggle = (index: number) => {
 
       {viewMode === 'chat' && (
         <>
-          <p className="fadeIn-animation text-black mt-4 mx-auto w-full lg:w-1/2">For the best results, ask Mentor for advice. For example: "I'm a startup founder. How can I keep my team motivated?" You may have to try 2-3 times for a gem.</p>
+          <p className="fadeIn-animation text-black mt-4 mx-auto w-full lg:w-1/2">For the best results, ask Mentor for advice. For example: &quot;I&apos;m a startup founder. How can I keep my team motivated?&quot; You may have to try 2-3 times for a gem.</p>
 
           <div onClick={() => handleToggle(1)} className="fadeIn-animation text-black mt-4 mx-auto w-full lg:w-1/2 cursor-pointer">
             <b>How is this different from prompting? ▶</b>

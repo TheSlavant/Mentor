@@ -6,17 +6,17 @@ import GoogleAnalytics from "./GoogleAnalytics";
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'The Macintosh Fine-Tune',
+  title: 'Mentor',
   description: 'Feel the difference.',
   twitter: {
     card: "summary_large_image",
-    title: "The Macintosh Fine-Tune",
+    title: "Mentor",
     description: "Feel the difference.",
     creator: "@TheSlavant",
     images: [
       {
         url: "/twitter-image.jpg",
-        alt: "The Macintosh Fine-Tune UI",
+        alt: "Mentor UI",
       },
     ],
   },
