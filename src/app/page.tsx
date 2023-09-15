@@ -133,7 +133,7 @@ const handleToggle = (index: number) => {
                 Imagine the <b>products</b> we can build when we have LLMs with actual personalities. Digital tutors, copilots for thought, lawyers, coaches, personal assistants.
               </p>
               <p className="mt-8">
-                Imagine the <b>research</b> we can do. How does training data affect personality? Are some LLM personalities safer than others?
+                Imagine the <b>research</b> we can do. How does training data affect the model's personality? Are some LLM personalities safer than others?
               </p>
             </div>
             <div className="mt-8 md:mt-0 mx-auto w-full lg:w-1/2">
@@ -150,7 +150,7 @@ const handleToggle = (index: number) => {
           <p className="fadeIn-animation text-black mt-4 mx-auto w-full lg:w-1/2">For the best results, ask Mentor for advice. For example: &quot;I&apos;m a startup founder. How can I keep my team motivated?&quot; You may have to try 2-3 times for a gem.</p>
 
           <div onClick={() => handleToggle(1)} className="fadeIn-animation text-black mt-4 mx-auto w-full lg:w-1/2 cursor-pointer">
-            <b>How is this different from prompting? ▶</b>
+            <b>How is this different from prompting the model for qualities? ▶</b>
           </div>
           {visibleResponse === 1 && (
             <p className="fadeIn-animation text-black mt-4 mx-auto w-full lg:w-1/2">Pretty different. We taught GPT-3.5 to extract knowledge from its weights differently, whereas prompting simply sets the context for the existing model. The result is a real personality, not roleplaying.</p>
@@ -160,7 +160,7 @@ const handleToggle = (index: number) => {
             <b>Can we get a deep personality via fine-tuning? ▶</b>
           </div>
           {visibleResponse === 2 && (
-            <p className="fadeIn-animation text-black mt-4 mx-auto w-full lg:w-1/2">We think yes. We built this v0.1 with a tiny handcrafted dataset. With more data, we believe we can make it much better.</p>
+            <p className="fadeIn-animation text-black mt-4 mx-auto w-full lg:w-1/2">We think yes. We built this v0.1 with a tiny handcrafted dataset. With more data, we believe we can make it much better. We are also excited about trainin an LLM from scratch to have an engaging personality.</p>
           )}
 
           <div onClick={() => handleToggle(3)} className="fadeIn-animation text-black mt-4 mx-auto w-full lg:w-1/2 cursor-pointer">
